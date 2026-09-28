@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{margin: 0;
+padding: 0;
+}
+:root{
+     --Navy-850: hsl(217, 28%, 15%);
+     --Navy-900: hsl(218, 28%, 13%);
+     --Navy-950: hsl(216, 53%, 9%);
+     --Navy-800: hsl(219, 30%, 18%);
+     
+--Teal-200: hsl(176, 68%, 64%);
+--Cyan-500: hsl(198, 60%, 50%);
+ --Red-500: hsl(0, 100%, 63%);
+ --White: hsl(0, 0%, 100%);
+}
+body{
+
+height: 100vh;
+position: relative;
+z-index: 1;
+
+}
+
+
+.container{
+     max-width: 550px ;
+     margin: auto;
+
+}
+/* utility class */
+
+.header{
+  
+     width: 100%;
+background-color:var(--Navy-800) ;
+}
+.header nav{
+     display: flex;
+     justify-content: space-between;
+     margin: 0px 50px ;
+height: 50px ;
+}
+
+.header nav img{
+     height: 25px ;
+     margin-top: 17px ;
+}
+.header nav ul{
+     display: flex;
+     justify-content: space-between;
+
+}
+.header nav ul li{
+     margin-top: 15px ;
+     font-size: 20px ;
+     margin-left: 20px ;
+     list-style: none;
+     
+}
+.header nav ul li a{
+     color: var(--White);
+  text-decoration: none;
+  opacity: 0.8;
+}
+.header nav ul li a:hover{
+    border-bottom: 2px solid var(--White);
+   opacity: 1;
+
+    transition: 0.3s;
+}
+
+.main{
+ 
+ background-repeat: no-repeat;
+  background-color:var(--Navy-800) ;
+min-height: 500px ;
+overflow: hidden;
+position: relative;
+z-index: 0;
+}
+.main::before{
+     content: "";
+     width: 100% ;
+     height: 100vh;
+     z-index: 0;
+     position: absolute;
+     top: 300px ;
+     background-image: url(./images/bg-curvy-desktop.svg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: top center;
+
+
+}
+.home{
+  
+ display: flex;
+ align-items: center;
+ justify-content: center;
+position: relative;
+z-index: 1;
+}
+
+.home .home-content{
+     text-align: center;
+     color: var(--White);
+   
+}
+.home .home-content img{
+height: fit-content;
+}
+
+.home .home-content h1{
+     line-height: 35px ;
+}
+.home .home-content p{
+     opacity: 0.8;
+     margin-top: 30px ;
+     margin-bottom: 20px ;
+}
+.home .home-content button{
+     height: 30px ;
+     width: 140px ;
+     border-radius: 15px ;
+     border: none;
+     background-color: var(--Cyan-500);
+     color: var(--White);
+     font-weight: 700;
+}
+.home .home-content button:hover{
+        background-color: var(--Teal-200);
+         color: var(--Navy-900);
+         transition: 0.5s;
+}
+/* section2 */
+.section2{
+     background-color: var(--Navy-900);
+}
+.home2-content1{
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     z-index: 1;
+ ;
+     margin: auto;
+     margin-top: 100px ;
+   background-color: var(--Navy-900);
+}
+.number{
+     text-align: center;
+     color: var(--White);
+    width: 250px;
+
+}
+.section3{
+     position: relative;
+     z-index: 1;
+     background-color: var(--Navy-900);
+    
+    
+}
+.section3 .manger{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+      max-width: 800px;
+     margin: auto;
+
+}
+.section3 .manger img{
+     max-width: 400px ;
+      margin-top: 100px ;
+      margin-right: 50px ;
+      
+ }
+ .section3 .manger .contact{
+     margin-top: auto;
+     color: var(--White);
+     line-height: 25px ;
+ }
+  .section3 .manger .contact a{
+     color: var(rgb(4, 4, 181));
+border-bottom: 2px solid var(rgb(4, 4, 181));
+  }
+  .a{
+     width: 50px ;
+height: 15px ;
+margin-top: 0;
+padding-top: 0;
+  }
+  /* secton 4 */
+  .section4{
+   
+     background-color: var(--Navy-900);
+  min-width: 1000px ;
+  height: 700px ;
+  }
+.coments{
+     padding-top: 100px ;
+     display: flex;
+     justify-content: space-between;
+   margin: auto;
+     min-width: 800px ;
+}
+.coments.coments:first-child{
+     position: relative;
+     z-index: 1;
+}
+.coments:first-child::before{
+content: "";
+position: absolute;
+top: 200px;
+left: 100px ;
+
+
+
+     background-image: url(./images/bg-quotes.png);
+     z-index: 0;
+}
+.coments .coment{
+background-color: var(--Navy-800);
+margin-left: 70px ;
+width: 400px ;
+  padding: 20px ;
+  border-radius: 10px ;
+}
+.coments .coment:last-child{
+     margin-right: 20px ;
+}
+.coments .coment img{
+     width: 35px ;
+     height: 35px ;
+     border-radius: 50%;
+     margin-right: 20px ;
+}
+.coments .coment{
+     color: var(--White);
+}
+.coments .coment .text1{
+     line-height: 25px ;
+
+     margin-bottom: 60px ;
+}
+.coments .coment .person{
+     display: flex;
+
+}
+.coments .coment .person .about-you h3{
+font-weight: 600;
+margin-bottom: 15px ;
+}
+.coments .coment .person .about-you p{
+     opacity: 0.8;
+     font-size: 15px ;
+
+}
+/* footer */
+footer{
+     background-color: var(--Navy-950);
+     color: var(--White);
+     padding: 50px 50px ;
+   padding-top: 200px ;
+   z-index: -1;
+
+}
+footer .detiels{
+     display: flex;
+     justify-content: space-between;
+     margin-left: 100px ;
+     opacity: 0.8;
+}
+footer .detiels .foot{
+     margin-top: 50px ;
+     width: 230px ;
+     list-style: none;
+}
+footer .detiels .foot-rt{
+     width: 300px ;
+         list-style: none;
+        
+}
+footer .detiels .foot-rt .loction{
+     display: flex;
+
+
+}
+footer .detiels .foot-rt .loction i{
+     margin-right: 10px ;
+}
+footer .detiels .foot1{
+     width: 90px ;
+         list-style: none;
+             margin-top: 50px ;
+}
+
+.cta-container {
+  background-color: #1c2431;
+  color: #ffffff;
+  padding: 40px 60px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto; /* توسيط الصندوق */
+  
+  /* 🚀 الخصائص السحرية لرفع العنصر وفوق العناصر الأخرى */
+  position: absolute;     
+  z-index: 50;       
+  bottom:300px ;
+  left: 330px ;
+opacity: 3;
+z-index: 50;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* ظل قوي ليبرز تأثير الطفو */
+  line-height: 40px ;
+}
+.cta-container .form-group input{
+     height: 40px ;
+     width: 300px ;
+     padding: 0px 20px ;
+     margin-right: 20px ;
+    border: none;
+     background-color: var(--Navy-850);
+     border-bottom: 3px solid var(--White);
+     color: var(--White);
+    
+
+}
+.cta-container .form-group input:focus{
+     outline: none;
+     border:2px solid var(--Cyan-500);
+     border-radius: 15px;
+
+}
+.cta-container .form-group button{
+     height: 50px ;
+     width: 120px ;
+padding: 0px 10px ;  
+background-color: var(--Cyan-500);
+border: none;
+border-radius: 15px;
+color: var(--White);
+}
+.cta-container .form-group button:hover{
+background-color:var(--Teal-200);
+}
